@@ -82,13 +82,14 @@ console.log(l.br_search(5)) will return '5' */
 
 Array.prototype.br_search = function (target) 
 {
-
   // console.log(target)
-  var half = parseInt(this.length / 2);
+  var half = parseInt(this.length / 2); 
   
   // console.log(half + this.slice(half,target.length).br_search(target))
+  console.log(half, 'ini half')
   if (target === this[half]) 
   {
+    console.log(this[half],'this half')
     // return half
     console.log("ini data if 1", half)
     return half
